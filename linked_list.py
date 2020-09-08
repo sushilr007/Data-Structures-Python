@@ -1,5 +1,6 @@
 import time
 import sys
+
 #Create a node
 class Node:
     def __init__(self, data=None, next=None):
@@ -29,7 +30,6 @@ class LinkedList:
         while itr:
             count+=1
             itr = itr.next
-
         return count
 
     def insert_at_begining(self, data):
@@ -128,9 +128,9 @@ class LinkedList:
         elif choice=="Q" or choice=="q":
             sys.exit
         else:
-            print("You must only select either A,B,D, or Q.")
+            print("You must only select either A,B,C,D, or Q.")
             print("Please try again")
-            ll.menu()
+            menu()
 if __name__ == '__main__':
     ll = LinkedList()
     ll.menu()       
